@@ -1,0 +1,30 @@
+[
+	{
+		"name": "cg_sphere1",
+		"dimensions": {
+			"z": 4,
+			"x": 4,
+			"y": 4
+		},
+		"type": "Sphere",
+		"position": {
+			"z": -2,
+			"x": 0.5,
+			"y": 0
+		}
+	},
+	{
+		"name": "cg_sphere2",
+		"dimensions": {
+			"z": 2.4,
+			"x": 2.4,
+			"y": 2.4
+		},
+		"type": "Sphere",
+		"position": {
+			"z": 3,
+			"x": 0.5,
+			"y": 0
+		}
+	}
+]
