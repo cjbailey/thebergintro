@@ -1,0 +1,112 @@
+@font-face {
+  font-family: PressStart2P;
+  src: url("PressStart2P-Regular.7773daeb.ttf") format("truetype");
+}
+
+body {
+  background: linear-gradient(0deg, #5aa9ce 0%, #91bab9 100%);
+  margin: 0;
+}
+
+#stats {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#container {
+  width: 100%;
+  background: linear-gradient(0deg, #5aa9ce 0%, #91bab9 100%);
+  display: none;
+}
+
+#container > canvas {
+  width: 100%;
+}
+
+#minimap {
+  width: 200px;
+  height: 200px;
+  clip-path: circle(50%);
+  background-color: #00297585;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#minimap > canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.minimap-border {
+  z-index: 999;
+  border: 2px solid #1a42af;
+  border-radius: 100px;
+  position: absolute;
+  inset: 0;
+}
+
+#cover {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+#cover > div {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 40vh;
+  position: relative;
+}
+
+#cover img {
+  width: 100%;
+}
+
+#cover .cover-text {
+  text-align: center;
+  color: #fff;
+  font-family: PressStart2P;
+  display: none;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fffc;
+  border-right-color: #add8e6;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: loader-anim 2s ease-in-out infinite forwards;
+  display: block;
+}
+
+#debug {
+  height: 100px;
+  color: #eee;
+  background-color: #222;
+  font-family: consolas;
+  font-size: 6pt;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+
+#debug p {
+  line-height: 6px;
+}
+
+@keyframes loader-anim {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/*# sourceMappingURL=index.7abba0a1.css.map */
